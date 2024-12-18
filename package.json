@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev --dotenv .env.development",
+    "build:dev": "nuxi build --dotenv .env.dev",
+    "build:sit": "nuxi build --dotenv .env.sit",
+    "build:uat": "nuxi build --dotenv .env.uat",
+    "build:pro": "nuxi build --dotenv .env.pro",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.9.0",
+    "nuxt": "^3.14.1592",
+    "pinia": "^2.3.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "less": "^4.2.1"
+  }
+}
