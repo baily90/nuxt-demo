@@ -9,15 +9,21 @@
 <script setup>
 import useUserStore from '~/store/user'
 
-const { data } = await useAsyncData(() => $fetch('/api/count'))
-
-
 const userStore = useUserStore()
 
 const { userInfo } = storeToRefs(userStore)
 
 const route = useRoute()
 const id = ref(route.params.id)
+
+
+const {data} = await useAsyncData(() => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('this is from asyncData-'+id.value)
+    }, 3000)
+  })
+})
 
 useHead({
   title: `检查单${id.value}`,
