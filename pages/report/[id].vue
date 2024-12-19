@@ -1,21 +1,16 @@
 <template>
   <div class="container-report">
     report-{{id}}
-
-              <div @click="userStore.setUserInfo('张三')">{{ userInfo ? userInfo : '设置名称' }}</div>
+    <div @click="userStore.setUserInfo('张三')">{{ userInfo ? userInfo : '设置名称' }}</div>
+    {{ data }}
   </div>
 </template>
 
 <script setup>
-
-
-
-
-
-
-
-
 import useUserStore from '~/store/user'
+
+const { data } = await useAsyncData(() => $fetch('/api/count'))
+
 
 const userStore = useUserStore()
 
