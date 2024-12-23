@@ -17,6 +17,7 @@
   </div>
 </template>
 
-<style>
-
+<style lang="less" scoped>
+.container-com-report-recom-normal {
+}
 </style>

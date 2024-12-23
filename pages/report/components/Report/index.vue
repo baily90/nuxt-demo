@@ -25,6 +25,7 @@ defineProps({
 
 <style lang="less" scoped>
 .container-com-report {
+  width: 100%;
   background-color: beige;
 }
 </style>

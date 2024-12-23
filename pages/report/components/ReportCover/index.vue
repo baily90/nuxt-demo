@@ -8,6 +8,7 @@
       src="/imgs/icon_carotid.png"
     />
     姓名：{{report?.patientName}}（{{report?.gender}}）
+    筛查单位：{{report?.orgName}}
     联系电话：{{report?.patientMobile}}
     筛查单号：{{report?.checkCode}}
     筛查时间：{{report?.createTime}}

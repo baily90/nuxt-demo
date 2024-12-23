@@ -6,6 +6,10 @@ export default defineNuxtConfig({
       baseURL: process.env.NUXT_API_BASE_URL
     }
   },
+  devServer: {
+    port: 3000,
+    host: '0.0.0.0'
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   app: {

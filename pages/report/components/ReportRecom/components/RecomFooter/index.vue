@@ -21,6 +21,7 @@ const { report } = storeToRefs(reportStore)
 
 </script>
 
-<style>
-
+<style lang="less" scoped>
+.container-com-report-recom-footer {
+}
 </style>
