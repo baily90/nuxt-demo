@@ -26,6 +26,11 @@ defineProps({
 <style lang="less" scoped>
 .container-com-report {
   width: 100%;
+  // padding: 30px 80px;
   background-color: beige;
+  // box-sizing: border-box;
+  // &.content {
+  //   padding: 10px;
+  // }
 }
 </style>
