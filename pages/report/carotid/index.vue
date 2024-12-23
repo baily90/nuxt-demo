@@ -1,0 +1,3 @@
+<template>
+report-carotid
+</template>

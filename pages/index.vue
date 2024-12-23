@@ -1,0 +1,3 @@
+<template>
+report-ssr
+</template>
